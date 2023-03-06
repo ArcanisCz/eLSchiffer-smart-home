@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
 
 /* Moderní box model */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
 
 
 body {
@@ -13,7 +20,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Noto Sans Mono', monospace;
-	background: #013565 url('./images/house.jpg') center/cover no-repeat ;
+	background: #013565 url('./images/house.jpg') center/cover no-repeat;
 }
 
 .container {
@@ -305,7 +312,7 @@ body {
 
 
 
-/* detail */
+/* detail ???
 
 .detail {
 	display: flex;
@@ -339,3 +346,4 @@ body {
 	text-align: center;
 	margin: 30px 0;
 }
+*/
