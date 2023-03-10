@@ -6,7 +6,6 @@ import Lights from "../Lights";
 import "./style.css";
 
 const Dashboard = (data) => {
-    console.log(data)
     return (
         <main className="dashboard">
             <Lights data={data} />
