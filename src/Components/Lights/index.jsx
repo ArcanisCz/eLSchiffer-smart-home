@@ -6,7 +6,7 @@ const Lights = ({ data }) => {
     return (
         <div className="lights">
             {
-                data.data.lights.map((light) => {
+                data.map((light) => {
                     return (
                         <Light key={light.name} name={light.name} state={light.state} />
                     )

@@ -5,13 +5,13 @@ import Energy from "../Energy";
 import Lights from "../Lights";
 import "./style.css";
 
-const Dashboard = (data) => {
+const Dashboard = ({ data }) => {
     return (
         <main className="dashboard">
-            <Lights data={data} />
-            <Climate temperature={data.data.climate.temperature} humidity={data.data.climate.humidity} />
-            <Blinds state={data.data.blinds} />
-            <Energy electricity={data.data.energyConsumption.electricity} water={data.data.energyConsumption.water} />
+            <Lights data={data.lights} />
+            <Climate temperature={data.climate.temperature} humidity={data.climate.humidity} />
+            <Blinds state={data.blinds} />
+            <Energy electricity={data.energyConsumption.electricity} water={data.energyConsumption.water} />
         </main>
     )
 };
